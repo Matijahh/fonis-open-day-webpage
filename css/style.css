@@ -251,7 +251,13 @@ section {
   color: #faa61a;
   text-transform: uppercase;
   letter-spacing: 4px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-heading.prijava {
   font-size: 18px;
+  font-weight: 400;
 }
 
 .section-subheading {
