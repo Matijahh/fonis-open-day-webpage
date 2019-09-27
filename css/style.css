@@ -513,7 +513,7 @@ form input {
   text-decoration: none;
   border: none;
   border-bottom: 2px solid #faa61a;
-  width: 90%;
+  width: 95%;
 }
 
 /* ------------ Footer ------------ */
@@ -545,7 +545,7 @@ form input {
 }
 
 .footer .container {
-  padding: 160px 0;
+  padding: 100px 0;
 }
 
 .footer li,
