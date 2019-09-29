@@ -1,193 +1,201 @@
+3
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="./favicon.ico">
-    <title>FONIS</title>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="./favicon.ico">
+  <title>FONIS</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Ikone -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!-- Scroll animacija -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
-    />
-    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
-  </head>
-  <body>
-    <a href="home"></a>
-    <div class="wrapper">
-      <!-- Hero sekcija - Pocetak -->
+  <!-- Ikone -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-      <div class="video-container">
-        <video playsinline autoplay muted loop id="bgvid">
-          <source src="docs/Computer - 1196.mp4" type="video/mp4" />
-        </video>
+  <!-- Scroll animacija -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css" />
+  <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+</head>
+
+<body>
+  <a href="home"></a>
+  <div class="wrapper">
+    <!-- Hero sekcija - Pocetak -->
+
+    <div class="video-container">
+      <video playsinline autoplay muted loop id="bgvid">
+        <source src="docs/Computer - 1196.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="header">
+      <h1><span><img src="./docs/fonislogo_beli.png"></span> - Can We Help You With IT?</h1>
+    </div>
+
+    <!-- Hero sekcija - Kraj -->
+
+    <!-- Navbar - Pocetak -->
+
+    <nav class="nav">
+      <span id="brand">
+        <a href="index.html"><img src="docs/fonislogo_beli.png" alt=""></a>
+      </span>
+
+      <ul id="menu">
+        <li><a href="#">Početna</a></li>
+        <li><a href="#about">O Nama</a></li>
+        <li><a href="#services">Projekti</a></li>
+        <li><a href="#howto">Članstvo</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+
+      <div id="toggle">
+        <div class="span">menu</div>
       </div>
+    </nav>
 
-      <div class="header">
-        <h1><span><img src="./docs/fonislogo_beli.png"></span> - Can We Help You With IT!</h1>
-      </div>
+    <div id="resize">
+      <div class="close-btn">zatvori</div>
 
-      <!-- Hero sekcija - Kraj -->
+      <ul id="menu">
+        <li><a href="#">Početna</a></li>
+        <li><a href="#about">O Nama</a></li>
+        <li><a href="#services">Projekti</a></li>
+        <li><a href="#howto">Članstvo</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
 
-      <!-- Navbar - Pocetak -->
+    <!-- Navbar - Kraj -->
 
-      <nav class="nav">
-        <span id="brand">
-          <a href="index.html"><img src="docs/fonislogo_beli.png" alt=""></a>
-        </span>
+    <div class="content">
+      <!-- O Nama sekcija - Pocetak -->
 
-        <ul id="menu">
-          <li><a href="#">Početna</a></li>
-          <li><a href="#about">O Nama</a></li>
-          <li><a href="#services">Projekti</a></li>
-          <li><a href="#howto">Članstvo</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
+      <a name="about"></a>
 
-        <div id="toggle">
-          <div class="span">menu</div>
-        </div>
-      </nav>
-
-      <div id="resize">
-        <div class="close-btn">zatvori</div>
-
-        <ul id="menu">
-          <li><a href="#">Početna</a></li>
-          <li><a href="#about">O Nama</a></li>
-          <li><a href="#services">Projekti</a></li>
-          <li><a href="#howto">Članstvo</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </div>
-
-      <!-- Navbar - Kraj -->
-
-      <div class="content">
-        <!-- O Nama sekcija - Pocetak -->
-
-        <a name="about"></a>
-
-        <section class="story">
-            <div class="container-fluid">
-                <div class="section-data">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
-                        <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Ko smo mi?</div>
-                    </div>
-        
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
-                            <h1>
-                              FONIS je udruženje studenata informatike koje okuplja motivisane studente željne znanja u cilju usavršavanja u
-                              različitim oblastima IT-a.
-                            </h1>
-                        </div>
-                    </div>
-        
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-6 section-info wow fadeInUp" data-wow-delay="0.6s">
-                            <h1>
-                              Članstvo u našoj organizaciji vam pruža jedinstvenu mogućnost da na mnogobrojnim internim radionicama naučite
-                              konkretne tehnologije i stečena znanja primenite na internim hakatonima. Pored toga, na raspolaganju vam je i
-                              mogućnost učestvovanja u organizaciji raznih projekata radi razvijanja vaših ličnih vestina.
-                              Kroz rad u organizaciji, moći ćete da osetite pravu timsku atmosferu, uživaćete u čestim druženjima i uz to
-                              ostvarićete sjajna prijateljstva.
-                            </h1>
-                        </div>
-                    </div>
-        
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8 more wow fadeInUp" data-wow-delay="0.7s">
-                            <button class="btn-o-nama" id="btn"><span></span><span></span><span></span><span></span><span></span><span></span><a href="http://fonis.rs/" target="_blank">Saznaj
-                              više</a></button>
-                        </div>
-                    </div>
-                </div>
+      <section class="story">
+        <div class="container-fluid">
+          <div class="section-data">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
+              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Ko smo mi?</div>
             </div>
-        </section>
+
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
+                <h1>
+                  FONIS je udruženje studenata informatike koje okuplja motivisane studente željne znanja u cilju
+                  usavršavanja u
+                  različitim oblastima IT-a.
+                </h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-6 section-info wow fadeInUp" data-wow-delay="0.6s">
+                <h1>
+                  Članstvo u našoj organizaciji vam pruža jedinstvenu mogućnost da na mnogobrojnim internim radionicama
+                  naučite
+                  konkretne tehnologije i stečena znanja primenite na internim hakatonima. Pored toga, na raspolaganju
+                  vam je i
+                  mogućnost učestvovanja u organizaciji raznih projekata radi razvijanja vaših ličnih vestina.
+                  Kroz rad u organizaciji, moći ćete da osetite pravu timsku atmosferu, uživaćete u čestim druženjima i
+                  uz to
+                  ostvarićete sjajna prijateljstva.
+                </h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-8 more wow fadeInUp" data-wow-delay="0.7s">
+                <button class="btn-o-nama"
+                  id="btn"><span></span><span></span><span></span><span></span><span></span><span></span><a
+                    href="http://fonis.rs/" target="_blank">Saznaj
+                    više</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- O Nama sekcija - Kraj -->
 
       <!-- Projekti sekcija - Pocetak -->
 
       <a name="services"></a>
 
-        <section class="services">
-            <div class="container-fluid">
-                <div class="section-data">
-                    
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
-                        <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Projekti</div>
-                    </div>
+      <section class="services">
+        <div class="container-fluid">
+          <div class="section-data">
 
-                    <div class="row timeline1">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="icon">
-                                <img src="docs/s2slogo.png" alt="">
-                            </div>
-                            <div class="icon-title">“Studenti studentima” je tradicionalni projekat organizacije u okviru kojeg studenti sa većim iskustvom, tokom interaktivnih radionica, prenose kolegama svoja znanja iz različitih oblasti IT-a.</div>
-                        </div>
-
-                        <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="icon">
-                                <img src="docs/hzslogo.png" alt="">
-                            </div>
-                            <div class="icon-title">"Hakaton za srednjoškolce" je dvadesetčetvoročasovno takmičenje srednjoškolaca u formiranju rešenja za zadati problem i u prezentovanju istih pred stručnim žirijem.</div>
-                        </div>
-                    </div>
-
-                    <div class="row timeline1">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="icon">
-                                <img src="docs/fonhakatonlogo.png" alt="">
-                            </div>
-                            <div class="icon-title">"FON Hakaton" je dvadesetčetvoročasovno takmičenje najboljih studenata programera iz Srbije i regiona kome prethodi “Tech Challenge”, takmičenje novih generacija inovatora u osmišljavanju inovativnih inženjerskih rešenja.
-                            </div>
-                        </div>
-                    
-                        <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
-                            <div class="icon">
-                                <img src="docs/soflogo.png" alt="">
-                            </div>
-                            <div class="icon-title">"Seminar organizacije FONIS" je višednevna konferencija članova organizacije FONIS. Tokom konferencije članovi imaju priliku da prisustvuju raznovrsnim radionicama iz oblasti IT-a i timbilding aktivnostima. 
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
+              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Projekti</div>
             </div>
-        </section>
+
+            <div class="row timeline1">
+              <div class="col-md-4"></div>
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="icon">
+                  <img src="docs/s2slogo.png" alt="">
+                </div>
+                <div class="icon-title">“Studenti studentima” je tradicionalni projekat organizacije u okviru kojeg
+                  studenti sa većim iskustvom, tokom interaktivnih radionica, prenose kolegama svoja znanja iz
+                  različitih oblasti IT-a.</div>
+              </div>
+
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="icon">
+                  <img src="docs/hzslogo.png" alt="">
+                </div>
+                <div class="icon-title">"Hakaton za srednjoškolce" je dvadesetčetvoročasovno takmičenje srednjoškolaca u
+                  formiranju rešenja za zadati problem i u prezentovanju istih pred stručnim žirijem.</div>
+              </div>
+            </div>
+
+            <div class="row timeline1">
+              <div class="col-md-4"></div>
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="icon">
+                  <img src="docs/fonhakatonlogo.png" alt="">
+                </div>
+                <div class="icon-title">"FON Hakaton" je dvadesetčetvoročasovno takmičenje najboljih studenata
+                  programera iz Srbije i regiona kome prethodi “Tech Challenge”, takmičenje novih generacija inovatora u
+                  osmišljavanju inovativnih inženjerskih rešenja.
+                </div>
+              </div>
+
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="icon">
+                  <img src="docs/soflogo.png" alt="">
+                </div>
+                <div class="icon-title">"Seminar organizacije FONIS" je višednevna konferencija članova organizacije
+                  FONIS. Tokom konferencije članovi imaju priliku da prisustvuju raznovrsnim radionicama iz oblasti IT-a
+                  i timbilding aktivnostima.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       <!-- Projekti sekcija - Kraj -->
 
@@ -196,132 +204,152 @@
       <a name="howto"></a>
 
       <section class="story">
-          <div class="container-fluid">
-              <div class="section-data">
-                  <div class="row">
-                      <div class="col-md-2"></div>
-                      <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
-                      <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Kako postati član?</div>
-                  </div>
-      
-                  <div class="row">
-                      <div class="col-md-4"></div>
-                      <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
-                          <h1>
-                            Prijem novih članova se vrši na početku svake školske godine, ne vršimo prijem članova u toku školske godine. Svi
-                            kandidati moraju da prođu određene krugove selekcije u procesu prijema članova koji traje manje od mesec dana. Ako
-                            uspešno prođete sve korake navedene ispod, postajete član naše organizacije!
-                            <br><br>
-                            Prvi korak ka članstvu je prijavljivanje za članstvo, tj. <span>slanje CV-a i motivacionog pisma.</span>
-                            Ove godine se za članstvo u našoj organizaciji možete prijaviti u periodu od 14. do 27. oktobra popunjavanjem forme na
-                            stranici prijava.fonis.rs/prijem.
-                            Svi prijavljeni kandidati koji uspešno prođu prvi krug selekcije biće pozvani na <span>test informisanosti o informacionim
-                            tehnologijama</span> koji predstavlja drugi krug selekcije.
-                            Kandidati koji ostvare najbolje rezultate na testu proći će u treći i poslednji krug selekcije, odnosno <span>intervju.</span> Oni
-                            koji uspešno prođu i poslednji krug selekcije, postaće članovi naše organizacije.
-                            Ukoliko želite da saznate više detalja o procesu selekcije, iskustvima dugogodišnjih članova organizacije kao i o
-                            benefitima koje vam članstvo u našoj organizaciji može doneti, posetite nas na prezentaciji organizacije 17. oktobra i
-                            pitajte sve što vas zanima o FONIS-u. Tačno vreme i mesto održavanja prezentacije biće objavljeni na Facebook stranici
-                            organizacije.
-                            O samoj organizaciji i prijemu novih članova možete se informisati i na štandu koji će biti postavljen u holu
-                            Fakulteta.
-                          </h1>
-                      </div>
-                    </div>
-      
-                  <div class="row">
-                      <div class="col-md-4"></div>
-                      <div class="col-md-6 more wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="section-heading datumiHeading">Prijave traju</div>
-                        <ul class="datumi">
-                          <li>14.-27. 10. 2019.</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4"></div>
-                      <div class="col-md-6 more wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="section-heading datumiHeading">Prezentacija organizacije</div>
-                        <ul class="datumi">
-                          <li>17. 10. 2019.</li>
-                        </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-    <!-- Clanstvo sekcija - Kraj -->
-
-    <!-- FAQ sekcija - Pocetak -->
-
-    <a name="faq"></a>
-
-    <section class="services">
         <div class="container-fluid">
-            <div class="section-data">
-                
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
-                    <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">FAQ</div>
-                </div>
+          <div class="section-data">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
+              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Kako postati član?</div>
+            </div>
 
-                <div class="row timeline1">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="question">
-                            <p>Ko može da bude član FONIS-a?</p>
-                        </div>
-                        <div class="icon-title">Svi studenti Fakulteta organizacionih nauka se mogu prijaviti za članstvo u našoj organizaciji popunjavanjem prijave u periodu od 14. do 27. oktobra. Prijava će biti objavljena na stranici prijava.fonis.rs/prijem.
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="question">
-                            <p>Šta mi članstvo u FONIS-u donosi?</p>
-                        </div>
-                        <div class="icon-title">Članstvo će ti omogućiti priliku da usavršiš svoja tehnička znanja pohađanjem internih radionica i hakatona, kao i svoje lične veštine kroz rad na projektima. Pri tom češ steći mnogo kontakata i iskustva i uživaćeš u čestim druženjima.</div>
-                    </div>
-                </div>
-
-                <div class="row timeline1">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="question">
-                            <p>Da li je potrebno da već budem odličan programer da bih postao član?</p>
-                        </div>
-                        <div class="icon-title">Nije. Potrebno je da želiš da naučiš da programiraš i da imaš entuzijazma i želje da radiš na sebi kroz rad na projektima.
-                        </div>
-                    </div>
-                
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="question">
-                            <p>Koliko vremena će mi članstvo oduzeti?</p>
-                        </div>
-                        <div class="icon-title">Onoliko vremena koliko želiš da posvetiš radu u organizaciji. Benefiti koje ćeš dobiti direktno zavise od vremena koje uložiš u rad u organizaciji.</div>
-                    </div>
-                </div>
-
-                <div class="row timeline1">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
-                      <div class="question">
-                          <p>Da li sam se prijavio za članstvo ostavljanjem e-mail adrese na Open Day-u?
-                          </p>
-                      </div>
-                      <div class="icon-title">Nisi. Za članstvo u organizaciji se možeš prijaviti isključivo popunjavam prijave koja će biti objavljana na stranici prijava.fonis.rs/prijem. Na e-mail koji si nam ostavio ćemo te obavestiti o otvaranju prijava.
-                      </div>
-                  </div>
-              
-                  <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
-                      <div class="question">
-                          <p>Kako se mogu informisati o iskustvima članova organizacije?
-                          </p>
-                      </div>
-                      <div class="icon-title">Možeš posetiti naš štand u holu Fakulteta i popričati sa našim članovima o njihovim iskustvima, a takođe nas možeš posetiti na prezentaciji organizacije 17. oktobra i pitati Upravni odbor sve što te zanima.</div>
-                  </div>
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s">
+                <h1>
+                  Prijem novih članova se vrši na početku svake školske godine, ne vršimo prijem članova u toku školske
+                  godine. Svi
+                  kandidati moraju da prođu određene krugove selekcije u procesu prijema članova koji traje manje od
+                  mesec dana. Ako
+                  uspešno prođete sve korake navedene ispod, postajete član naše organizacije!
+                  <br><br>
+                  Prvi korak ka članstvu je prijavljivanje za članstvo, tj. <span>slanje CV-a i motivacionog
+                    pisma.</span>
+                  Ove godine se za članstvo u našoj organizaciji možete prijaviti u periodu od 14. do 27. oktobra
+                  popunjavanjem prijave na
+                  stranici prijava.fonis.rs/prijem.
+                  Svi prijavljeni kandidati koji uspešno prođu prvi krug selekcije biće pozvani na <span>test
+                    informisanosti o informacionim
+                    tehnologijama</span> koji predstavlja drugi krug selekcije.
+                  Kandidati koji ostvare najbolje rezultate na testu proći će u treći i poslednji krug selekcije,
+                  odnosno <span>intervju.</span> Oni
+                  koji uspešno prođu i poslednji krug selekcije, postaće članovi naše organizacije.
+                  Ukoliko želite da saznate više detalja o procesu selekcije, iskustvima dugogodišnjih članova
+                  organizacije kao i o
+                  benefitima koje vam članstvo u našoj organizaciji može doneti, posetite nas na prezentaciji
+                  organizacije 17. oktobra i
+                  pitajte sve što vas zanima o FONIS-u. Tačno vreme i mesto održavanja prezentacije biće objavljeni na
+                  Facebook stranici
+                  organizacije.
+                  O samoj organizaciji i prijemu novih članova možete se informisati i na štandu koji će biti postavljen
+                  u holu
+                  Fakulteta.
+                </h1>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-6 more wow fadeInUp" data-wow-delay="0.7s">
+                <div class="section-heading datumiHeading">Prijave traju</div>
+                <ul class="datumi">
+                  <li>14.-27. 10. 2019.</li>
+                </ul>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-6 more wow fadeInUp" data-wow-delay="0.7s">
+                <div class="section-heading datumiHeading">Prezentacija organizacije</div>
+                <ul class="datumi">
+                  <li>17. 10. 2019.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      <!-- Clanstvo sekcija - Kraj -->
+
+      <!-- FAQ sekcija - Pocetak -->
+
+      <a name="faq"></a>
+
+      <section class="services">
+        <div class="container-fluid">
+          <div class="section-data">
+
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
+              <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">FAQ</div>
+            </div>
+
+            <div class="row timeline1">
+              <div class="col-md-4"></div>
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="question">
+                  <p>Ko može da bude član FONIS-a?</p>
+                </div>
+                <div class="icon-title">Svi studenti Fakulteta organizacionih nauka se mogu prijaviti za članstvo u
+                  našoj organizaciji popunjavanjem prijave u periodu od 14. do 27. oktobra. Prijava će biti objavljena
+                  na stranici prijava.fonis.rs/prijem.
+                </div>
+              </div>
+
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="question">
+                  <p>Šta mi članstvo u FONIS-u donosi?</p>
+                </div>
+                <div class="icon-title">Članstvo će ti omogućiti priliku da usavršiš svoja tehnička znanja pohađanjem
+                  internih radionica i hakatona, kao i svoje lične veštine kroz rad na projektima. Pri tom češ steći
+                  mnogo kontakata i iskustva i uživaćeš u čestim druženjima.</div>
+              </div>
+            </div>
+
+            <div class="row timeline1">
+              <div class="col-md-4"></div>
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="question">
+                  <p>Da li je potrebno da već budem odličan programer da bih postao član?</p>
+                </div>
+                <div class="icon-title">Nije. Potrebno je da želiš da naučiš da programiraš i da imaš entuzijazma i
+                  želje da radiš na sebi kroz rad na projektima.
+                </div>
+              </div>
+
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="question">
+                  <p>Koliko vremena će mi članstvo oduzeti?</p>
+                </div>
+                <div class="icon-title">Onoliko vremena koliko želiš da posvetiš radu u organizaciji. Benefiti koje ćeš
+                  dobiti direktno zavise od vremena koje uložiš u rad u organizaciji.</div>
+              </div>
+            </div>
+
+            <div class="row timeline1">
+              <div class="col-md-4"></div>
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="question">
+                  <p>Da li sam se prijavio za članstvo ostavljanjem e-mail adrese na Open Day-u?
+                  </p>
+                </div>
+                <div class="icon-title">Nisi. Za članstvo u organizaciji se možeš prijaviti isključivo popunjavanjem
+                  prijave koja će biti objavljena na stranici prijava.fonis.rs/prijem. Na e-mail koji si nam ostavio
+                  ćemo te obavestiti o otvaranju prijava.
+                </div>
+              </div>
+
+              <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="question">
+                  <p>Kako se mogu informisati o iskustvima članova organizacije?
+                  </p>
+                </div>
+                <div class="icon-title">Možeš posetiti naš štand u holu Fakulteta i popričati sa našim članovima o
+                  njihovim iskustvima, a takođe nas možeš posetiti na prezentaciji organizacije 17. oktobra i pitati
+                  Upravni odbor sve što te zanima.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- FAQ - Kraj -->
 
@@ -329,71 +357,83 @@
 
       <a name="contact"></a>
 
-        <section class="contact">
-          <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
-                <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Prijavi se!</div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-8 section-heading prijava mt-5 wow fadeInUp" data-wow-delay="0.5s"">Prijave za prijem novih članova još uvek nisu otvorene.</div>
-                <div class="col-md-4"></div>
-                <div class="col-md-8 section-heading prijava mt-5 wow fadeInUp" data-wow-delay="0.6s"">Pošalji nam svoj e-mail i obavestićemo te kada prijave budu otvorene.
-                </div>
-                <div class="col-md-4"></div>
-                <form action="" class="col-md-8 mt-5">
-                    <input type="email" name="email" class="wow fadeInUp" data-wow-delay="0.6s">
-                </form>
-                <div class="col-md-4"></div>
-                <div class="col-md-4 more wow fadeInUp" data-wow-delay="0.7s">
-                    <button class="btn-o-nama mt-5" id="btn">Pošalji<span></span><span></span><span></span><span></span><span></span><span></span></button>
-                </div>
-            </div>
+      <section class="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2 section-index wow fadeInUp" data-wow-delay="0.3s"></div>
+            <div class="col-md-8 section-heading wow fadeInUp" data-wow-delay="0.4s">Prijavi se!</div>
           </div>
-        </section>
+
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8 section-heading prijava mt-5 wow fadeInUp" data-wow-delay="0.5s"">Prijave za prijem novih članova još uvek nisu otvorene.</div>
+                <div class=" col-md-4"></div>
+            <div class="col-md-8 section-heading prijava mt-5 wow fadeInUp" data-wow-delay="0.6s"">Pošalji nam svoj e-mail i obavestićemo te kada prijave budu otvorene.
+                </div>
+                <div class=" col-md-4"></div>
+            <form action="" name="email list" class="col-md-8 mt-5">
+              <input type="email" name="email" id="email" class="wow fadeInUp" data-wow-delay="0.6s">
+            
+            <div class="col-md-4"></div>
+            <div class="col-md-4 more wow fadeInUp" data-wow-delay="0.7s">
+              <button class="btn-o-nama mt-5" type="submit"
+                id="btn">Pošalji<span></span><span></span><span></span><span></span><span></span><span></span></button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </section>
 
       <!-- Kontakt sekcija - Kraj -->
 
       <!-- Footer - Pocetak -->
 
-        <div class="footer">
-          <div class="container">
-            <div class="info">
-              <div class="row">
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" id="adress">
-                  <p>Gde se nalazimo</p>
-                  <h4>Fakultet Organizacionih Nauka</h4>
-                  <h4>Jove Ilića 154</h4>
-                  <h4>Beograd</h4>
+      <div class="footer">
+        <div class="container">
+          <div class="info">
+            <div class="row">
+              <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" id="adress">
+                <p>Gde se nalazimo</p>
+                <h4>Fakultet Organizacionih Nauka</h4>
+                <h4>Jove Ilića 154</h4>
+                <h4>Beograd</h4>
 
-                  <br><br>
-                </div>
+                <br><br>
+              </div>
 
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" id="media">
-                  <ul>
-                    <li><a href="https://www.facebook.com/fonis.rs" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="https://www.instagram.com/fonis_fon/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC_9rwOB3Adra5BZziVNRkVg" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                    <li><a href="https://twitter.com/fonis_fon?lang=en" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="https://www.linkedin.com/company/fonis/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  </ul>
+              <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" id="media">
+                <ul>
+                  <li><a href="https://www.facebook.com/fonis.rs" target="_blank">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                  <li><a href="https://www.instagram.com/fonis_fon/" target="_blank">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                  <li><a href="https://www.youtube.com/channel/UC_9rwOB3Adra5BZziVNRkVg" target="_blank">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                  <li><a href="https://twitter.com/fonis_fon?lang=en" target="_blank">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                  <li><a href="https://www.linkedin.com/company/fonis/" target="_blank">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                </ul>
 
-                  <br><br>
-                </div>
+                <br><br>
+              </div>
 
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
-                  <p>Kontaktiraj nas!</p>
-                  <h4>fonis.rs</h4>
+              <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
+                <p>Kontaktiraj nas!</p>
+                <h4>fonis.rs</h4>
 
-                  <br><br>
-                </div>
+                <br><br>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
       <!-- Footer - Kraj -->
     </div>
@@ -461,5 +501,17 @@
         });
 
     </script>
-  </body>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwtapK2gg-aUgjJBobUBqhRN-Ac1R8HPj6l16yqure651zNTZQz/exec'
+      const form = document.forms['email list']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+
 </html>
