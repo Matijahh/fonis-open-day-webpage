@@ -36,6 +36,11 @@ video {
   opacity: 0.8;
 }
 
+.btn-header {
+  width: 100% !important;
+  font-size: 30px !important;
+}
+
 .header {
   position: absolute;
   top: 50%;
@@ -60,6 +65,10 @@ video {
 
   .header h1 span img {
     width: 100px;
+  }
+
+  .btn-header {
+    font-size: 20px !important;
   }
 }
 
