@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #161616;
+  background-image: url('../docs/bg2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#forma {
+  width: 460px;
+  background: #f1f1f1;
+  padding: 80px 40px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 2s;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
+}
+
+#forma h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.txtb {
+  border-bottom: 2px solid #005d83;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb1 {
+  margin-left: 50px;
+}
+
+.txtb input {
+  font-size: 15px;
+  color: #005d83;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #005d83;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.focus + span::before {
+  top: -5px;
+}
+
+select {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0 50px 0 20px;
+  cursor: pointer;
+  color: #005d83;
+  text-indent: 5px;
+}
+
+textarea {
+  width: 100%;
+  background: #f1f1f1;
+  border-style: none;
+  border-color: transparent;
+}
+
+.logbtn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right top,
+    #009aa0,
+    #00909b,
+    #007b91,
+    #006c8a,
+    #005d83
+  );
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logbtn:hover {
+  background-position: top;
+  font-size: 18px;
+}
+
+.bottom-text p {
+  margin-top: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  color: #005d83;
+}
+
+.bottom-text p img {
+  width: 60px;
+}
+
+@media (max-width: 770px) {
+  .txtb input {
+    font-size: 12px;
+  }
+
+  .txtb1 {
+    margin-left: 0px;
+  }
+
+  .txtb span::before {
+    font-size: 12px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  #forma {
+    width: 250px;
+  }
+
+  #forma h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    margin-top: 0;
+    font-size: 8px;
+  }
+
+  .txtb {
+    font-size: 8px;
+  }
+
+  .txtb span::before {
+    font-size: 8px;
+  }
+
+  .bottom-text p {
+    font-size: 6px;
+  }
+
+  .bottom-text p img {
+    width: 30px;
+  }
+
+  .logbtn {
+    font-size: 9px;
+  }
+
+  .logbtn:hover {
+    font-size: 11px;
+  }
+}
+
+#pitanja,
+#poruka {
+  display: none;
+}
