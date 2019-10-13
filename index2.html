@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
-    <title>Prijava za priUo tim</title>
+    <title>Prijava za ;lanstvo u FONIS-u</title>
 
     <!-- Font -->
     <link
@@ -34,20 +34,18 @@
   <body>
     <div class="container">
       <div id="forma">
-        <h1>Prijava za <span id="change"></span> članstvo u FONIS-u</h1>
+        <h1>Prijava za članstvo u FONIS-u</h1>
         <form name="prijava">
           <div id="form">
-            <select class="col-12" id="tim" onchange="change()" name="tim">
-              <option value="" disabled selected>
-                Izaberite tim za koji se prijavljujete</option
-              >
-              <option value="PR">PR</option>
-              <option value="DIZAJN">DIZAJN</option>
-              <option value="CR">CR</option>
-              <option value="HR">HR</option>
-              <option value="KM">KM</option>
-              <option value="AR">AR</option>
-            </select>
+          <div class="form-row justify-content-between">
+              <select class="col-12" id="smer" name="smer" required>
+                <option value="" disabled selected>Studijska grupa:</option>
+                <option value="ISiT">Informacioni sistemi i tehnologije</option>
+                <option value="MiO">Menadžment i organizacija</option>
+                <option value="OM">Operacioni menadžment</option>
+                <option value="MKS">Menadžment kvaliteta i standardizacija</option>
+              </select>
+            </div>
             <div class="form-row justify-content-between">
               <div class="col col-12 col-md-5 txtb">
                 <input type="text" id="name" name="name" required />
@@ -71,36 +69,88 @@
                   pattern="^(?:\(?\+38\)?\s?)[1-9][60-69](?:[\.\-\s]?\d\d){3}(?:[\.\-\s]?\d)(?:\d?)$"
                   title="Broj telefona mora biti unet u formatu: +38x6yz..."
                   required
-                />
+                  />
                 <span data-placeholder="Telefon"></span>
               </div>
-              <div class="bottom-text">
-                <p>Powered by <img src="./img/fonislogo_crni.png" alt="" /></p>
+            </div>
+            <div class="form-row justify-content-between">
+              <div class="col col-12 col-md-5 txtb">
+                <input
+                type="text"
+                id="fbLink"
+                name="fbLink"
+                required
+              />
+                <span data-placeholder="Link do FB"></span>
               </div>
+              <div class="col col-12 col-md-5 txtb">
+                <input
+                type="text"
+                id="datumRodjenja"
+                name="datumRodjenja"
+                pattern="[0-3]\d\.[0-1]\d\.[1-2]\d\d\d\."
+                title="Datum ro]enja mora biti unet u formatu: DD.MM.GGGG."
+                required
+              />
+                <span data-placeholder="Datum rođenja"></span>
+              </div>
+            </div>
+            <div class="form-row justify-content-between">
+              <div class="col col-12 col-md-5 txtb">
+                <input
+                type="tel"
+                id="godinaStudija"
+                name="godinaStudija"
+                pattern="[1-4]"
+                title="Unesite broj između 1 i 4."
+                required
+              />
+                <span data-placeholder="Godina studija"></span>
+              </div>
+              <div class="col col-12 col-md-5 txtb">
+                <input
+                type="text"
+                id="brojIndeksa"
+                name="brojIndeksa"
+                pattern="\d{4}\/\d{4}"
+                title="Broj indekas mora biti unet u formatu: 201X/YYYY"
+                required
+              />
+                <span data-placeholder="Broj indeksa"></span>
+              </div>
+            </div>
+            <div class="bottom-text">
+              <p>Powered by <img src="./img/fonislogo_crni.png" alt="" /></p>
             </div>
             <div id="pitanja">
               <div>
-                <label id="pitanje#1"></label>
-                <textarea
-                  class="txtb"
-                  id="pitanje #1"
-                  name="pitanje #1"
-                  rows="5"
-                  required
-                ></textarea>
+                <label id="pitanje#1">U okviru kojih IT oblasti biste želeli da se usavršavate kroz rad u organizaciji?</label>
+                <input type="checkbox" name="pitanje #1" value="Frontend">Frontend<br>
+                <input type="checkbox" name="pitanje #1" value="Backend">Backend<br>
+                <input type="checkbox" name="pitanje #1" value="Dizajn">Dizajn<br>
+                <input type="checkbox" name="pitanje #1" value="Hardware">Hardware<br>
               </div>
               <div>
-                <label id="pitanje#2"></label>
-                <textarea
-                  class="txtb"
-                  id="pitanje #2"
-                  name="pitanje #2"
-                  rows="5"
-                  required
-                ></textarea>
+                <label id="pitanje#2">U okviru kojih oblasti biste želeli da doprinesete funkcionisanju organizacije? U kom timu vidite sebe?</label>
+                <p>
+                    Možete izabrati više opcija. <br>
+                    Pojašnjenje uloga:
+                    <br><br>
+                    IT – Održavanje sajtova organizacije, vizuelni identitet, rad sa bazom podataka, razvoj softvera ili tehnička podrška.
+                    <br><br>
+                    CR – Zadužen je za pribavljanje sredstava iz eksternih izvora za sve projekte organizacije, održavanje kontakta sa postojećim partnerima i prijateljima organizacije, kao i ostvarivanje novih saradnji.
+                    <br><br>
+                    PR – Održavanje društvenih mreža organizacije (Facebook, Twitter, Instagram), komunikacija i odnosi sa medijima.
+                    <br><br>
+                    HR – Upravljanje ljudskim resursima, vođenje evidencije o članovima organizacije, projektima na kojima učestvuju i znanju koje poseduju. Motivacija članova i organizacija društvenih aktivnosti tokom godine. Selekcija i prijem budućih članova.
+                </p>
+                <input type="checkbox" name="pitanje #2" value="IT">IT<br>
+                <input type="checkbox" name="pitanje #2" value="CR">CR<br>
+                <input type="checkbox" name="pitanje #2" value="PR">PR<br>
+                <input type="checkbox" name="pitanje #2" value="HR">HR<br>
               </div>
               <div>
-                <label id="pitanje#3"></label>
+                <label id="pitanje#3">Da li se bavite nekim vannastavnim aktivnostima i kojim?</label>
                 <textarea
                   class="txtb"
                   id="pitanje #3"
@@ -110,7 +160,7 @@
                 ></textarea>
               </div>
               <div>
-                <label id="pitanje#4"></label>
+                <label id="pitanje#4">Koje je boje kameleon kad se gleda u ogledalo?</label>
                 <textarea
                   class="txtb"
                   id="pitanje #4"
@@ -120,7 +170,7 @@
                 ></textarea>
               </div>
               <div>
-                <label id="pitanje#5"></label>
+                <label id="pitanje#5">Motivaciono pismo</label>
                 <textarea
                   class="txtb"
                   id="pitanje #5"
@@ -130,34 +180,22 @@
                 ></textarea>
               </div>
               <div>
-                <label id="pitanje#6"></label>
-                <textarea
-                  class="txtb"
-                  id="pitanje #6"
-                  name="pitanje #6"
-                  rows="5"
-                ></textarea>
-              </div>
-              <div>
-                <label id="pitanje#7"></label>
-                <textarea
-                  class="txtb"
-                  id="pitanje #7"
-                  name="pitanje #7"
-                  rows="5"
-                ></textarea>
-              </div>
+                  <label id="pitanje#6">Ostao je još samo jedan korak - Vaš CV. Molimo Vas da, koristeći klaud servis po izboru, aploudujete svoj CV u .pdf formatu i link prekopirate u polje ispod.</label>
+                  <p>
+                      Fajl mora biti imenovan u sledećem formatu: ImePrezime.pdf
+                  </p>
+                  <textarea
+                    class="txtb"
+                    id="pitanje #6"
+                    name="pitanje #6"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
               <div>
                 <button class="logbtn" type="submit">Pošalji prijavu</button>
               </div>
             </div>
-          </div>
-          <div id="poruka">
-            <h2 class="text-center">Vaša prijava je poslata!</h2>
-            <h4 class="text-center">
-              Ukoliko ne dobijete email potvrde u naredna 24h obratite se članu
-              UO-a za čiji ste tim poslali prijavu
-            </h4>
           </div>
         </form>
       </div>
@@ -179,6 +217,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
     <script>
       $('.txtb input').on('focus', function() {
