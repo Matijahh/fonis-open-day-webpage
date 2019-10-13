@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
-    <title>Prijava za ;lanstvo u FONIS-u</title>
+    <title>Prijava za članstvo u FONIS-u</title>
 
     <!-- Font -->
     <link
@@ -38,7 +38,7 @@
         <form name="prijava">
           <div id="form">
           <div class="form-row justify-content-between">
-              <select class="col-12" id="smer" name="smer" required>
+              <select class="col-12 txtb" id="smer" name="smer" required>
                 <option value="" disabled selected>Studijska grupa:</option>
                 <option value="ISiT">Informacioni sistemi i tehnologije</option>
                 <option value="MiO">Menadžment i organizacija</option>
@@ -123,14 +123,14 @@
               <p>Powered by <img src="./img/fonislogo_crni.png" alt="" /></p>
             </div>
             <div id="pitanja">
-              <div>
+              <div class="txtc">
                 <label id="pitanje#1">U okviru kojih IT oblasti biste želeli da se usavršavate kroz rad u organizaciji?</label>
-                <input type="checkbox" name="pitanje #1" value="Frontend">Frontend<br>
-                <input type="checkbox" name="pitanje #1" value="Backend">Backend<br>
-                <input type="checkbox" name="pitanje #1" value="Dizajn">Dizajn<br>
-                <input type="checkbox" name="pitanje #1" value="Hardware">Hardware<br>
+                <input type="checkbox" id="pitanje #front" name="pitanje #front" value="Frontend">Frontend<br>
+                <input type="checkbox" id="pitanje #back" name="pitanje #back" value="Backend">Backend<br>
+                <input type="checkbox" id="pitanje #d" name="pitanje #d" value="Dizajn">Dizajn<br>
+                <input type="checkbox" id="pitanje #hard" name="pitanje #hard" value="Hardware">Hardware<br>
               </div>
-              <div>
+              <div class="txtc">
                 <label id="pitanje#2">U okviru kojih oblasti biste želeli da doprinesete funkcionisanju organizacije? U kom timu vidite sebe?</label>
                 <p>
                     Možete izabrati više opcija. <br>
@@ -144,10 +144,10 @@
                     <br><br>
                     HR – Upravljanje ljudskim resursima, vođenje evidencije o članovima organizacije, projektima na kojima učestvuju i znanju koje poseduju. Motivacija članova i organizacija društvenih aktivnosti tokom godine. Selekcija i prijem budućih članova.
                 </p>
-                <input type="checkbox" name="pitanje #2" value="IT">IT<br>
-                <input type="checkbox" name="pitanje #2" value="CR">CR<br>
-                <input type="checkbox" name="pitanje #2" value="PR">PR<br>
-                <input type="checkbox" name="pitanje #2" value="HR">HR<br>
+                <input type="checkbox" id="pitanje #it" name="pitanje #it" value="IT">IT<br>
+                <input type="checkbox" id="pitanje #cr" name="pitanje #cr" value="CR">CR<br>
+                <input type="checkbox" id="pitanje #pr" name="pitanje #pr" value="PR">PR<br>
+                <input type="checkbox" id="pitanje #hr" name="pitanje #hr" value="HR">HR<br>
               </div>
               <div>
                 <label id="pitanje#3">Da li se bavite nekim vannastavnim aktivnostima i kojim?</label>
@@ -170,7 +170,10 @@
                 ></textarea>
               </div>
               <div>
-                <label id="pitanje#5">Motivaciono pismo</label>
+                <label id="pitanje#5">Motivaciono pismo:</label>
+                <p>
+                  Najviše 250 reči.
+                </p>
                 <textarea
                   class="txtb"
                   id="pitanje #5"

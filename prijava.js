@@ -26,5 +26,4 @@ form.addEventListener('submit', e => {
         confirmButtonText: 'Ok'
     })
     });
-    
 });
